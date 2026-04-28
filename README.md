@@ -1,25 +1,51 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Salary Management Application
 
-Things you may want to cover:
+## 🚀 Setup Instructions
 
-* Ruby version
+Follow the steps below to get the application running locally:
 
-* System dependencies
+```bash
+bundle install
+rails db:create && rails db:migrate && rails db:seed
+rails s
+```
 
-* Configuration
+---
 
-* Database creation
+## 🌐 Application URLs
 
-* Database initialization
+### 👨‍💼 Employees
 
-* How to run the test suite
+Access employee management:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+http://localhost:3000/employees
+```
 
-* Deployment instructions
+### 📊 Analytics Dashboard
 
-* ...
-# salary_management
+View analytics data:
+
+```
+http://localhost:3000/analytics/dashboard
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- Ruby on Rails 7
+- PostgreSQL
+- Bootstrap (if integrated)
+
+---
+
+## 📌 Notes
+
+- Make sure you have Ruby and Rails installed
+- Run all commands from the project root directory
+- Database will be seeded with initial data
+
+---

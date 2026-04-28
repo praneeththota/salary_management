@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "analytics/dashboard"
   resources :employees
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
