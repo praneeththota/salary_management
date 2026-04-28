@@ -1,16 +1,19 @@
-<p style="color: green"><%= notice %></p>
-
-<% content_for :title, "Employees" %>
-
-<h1>Employees</h1>
-
-<div id="employees">
-  <% @employees.each do |employee| %>
-    <%= render employee %>
-    <p>
-      <%= link_to "Show this employee", employee %>
-    </p>
-  <% end %>
-</div>
+<table class="table table-striped">
+  <thead class="table-primary">
+    <tr>
+      <th scope="col">Full Name</th>
+      <th scope="col">Job Title</th>
+      <th scope="col">Country</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Email</th>
+      <th scope="col">Department</th>
+    </tr>
+  </thead>
+  <tbody class="table-light">
+    <% @employees.each do |employee| %>
+      <%= render employee %>
+    <% end %>
+  </tbody>
+</table>
 
 <%= link_to "New employee", new_employee_path %>
