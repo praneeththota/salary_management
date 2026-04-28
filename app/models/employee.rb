@@ -1,2 +1,5 @@
 class Employee < ApplicationRecord
+  validates :full_name, presence: true
+  validates :salary, numericality: { greater_than: 0 }
+  validates :email, presence: true, uniqueness: true
 end

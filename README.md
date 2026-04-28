@@ -49,3 +49,11 @@ http://localhost:3000/analytics/dashboard
 - Database will be seeded with initial data
 
 ---
+
+## Prepare the test database
+
+rails db:test:prepare
+
+## Run all specs
+
+bundle exec rspec
