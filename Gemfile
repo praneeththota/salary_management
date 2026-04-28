@@ -22,6 +22,7 @@ gem "jbuilder"
 gem "faker", "~> 3.8"
 gem "bootstrap", "~> 5.3"
 gem "sassc-rails"
+gem "kaminari"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
